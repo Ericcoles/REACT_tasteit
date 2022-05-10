@@ -1,5 +1,6 @@
 import React from "react";
 import "./Main.css";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   return (
@@ -12,12 +13,12 @@ const Main = () => {
             Find your favorites in this collection. You can search recipes based
             on name or country.
           </p>
-          <a href="#">All recipes</a>
+          <Link to="/recipes">All recipes </Link>
         </div>
         <div className="card">
           <h4>Add recipes</h4>
           <p>Recipe from your country is missing? No worries, let's add one!</p>
-          <a href="#">Add recipes</a>
+          <Link to="/addrecipes">Add recipes </Link>
         </div>
         <div className="card">
           <h4>Want to more about our projects</h4>

@@ -5,15 +5,16 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <section className="navbar">
-      <a href="/" className="navbar-item">
+      <Link to="/" className="navbar-item">
+        {" "}
         Home
-      </a>
-      <a href="/recipes" className="navbar-item">
+      </Link>
+      <Link to="/recipes" className="navbar-item">
         Recipes
-      </a>
-      <a href="/addnewrecipe" className="navbar-item">
-        Add new recipe
-      </a>
+      </Link>
+      <Link to="/addrecipes" className="navbar-item">
+        Add New Recipes
+      </Link>
     </section>
   );
 };

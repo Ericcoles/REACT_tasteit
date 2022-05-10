@@ -4,30 +4,34 @@ body {
 
 .header {
   display: flex;
-  flex: 1;
-  flex-direction: column;
-  width: 100vw;
-}
-
-.header-top {
-  display: flex;
   width: 100%;
   justify-content: space-between;
   background-color: gray;
+  height: 3.3rem;
 }
 
-.header-top__logo {
+.logo {
+  z-index: 1;
+  position: absolute;
+  width: 3.3rem;
+}
+
+/* .header {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100vw;
+} */
+
+/* .header-top__logo {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 20px;
-}
+} */
 
-.header-logo {
-  color: inherit;
-  text-decoration: inherit;
-  font-family: RobotoThin;
-  font-size: 30px;
+/* .header-logo {
+  size: 3rem;
 }
 
 .header-top__navbar {
@@ -43,4 +47,4 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   margin-right: 55px;
-}
+} */

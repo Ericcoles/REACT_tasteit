@@ -1,20 +1,18 @@
 import React from "react";
 import Nav from "../nav/Nav";
 import "./Header.css";
+import { Link } from "react-router-dom";
+import logo from "../assets/coles.png";
 
 const Header = () => {
   return (
     <section className="header">
-      <section className="header-top">
-        <section className="header-top-logo">
-          <a href="/" className="header-logo">
-            {" "}
-            tasteIT{" "}
-          </a>
-        </section>
-        <section className="header-top_navbar"></section>
-        <Nav />
-      </section>
+      <Link to="/">
+        <div>
+          <img src={logo} className="logo" />
+        </div>
+      </Link>
+      <Nav />
     </section>
   );
 };

@@ -1,19 +1,30 @@
 import "./App.css";
-import Header from "./components/header/Header";
-import Hero from "./components/hero/Hero";
-import Main from "./components/main/Main";
-import { Link } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { ReactDOM } from "react";
+import Home from "./components/Home/Home";
+import Recipes from "./routes/Recipes";
+import Addrecipes from "./routes/Addrecipes";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Hero />
-      <Main />
-      <Link to="/recipes">Recipes</Link>
-      <Link to="/addrecipes">Add New Recipes</Link>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/recipes" element={<Recipes />} />
+          <Route path="/addrecipes" element={<Addrecipes />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
+
+{
+  /* <Header />
+<Hero />
+<Main />
+<Link to="/recipes">Recipes</Link>
+<Link to="/addrecipes">Add New Recipes</Link> */
+}
