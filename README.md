@@ -1,4 +1,4 @@
-#Recipe App created with React
+# Recipe App created with React
 Here is a fun way to keep track of your recipes. This recipe app allows you to add new recipes, update existing recipes, and delete old recipes. The recipes are searchable with each containing a country of origin with a fun flag :)
 
 Continue reading for general instruction for getting started with React.
