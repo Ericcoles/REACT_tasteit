@@ -40,3 +40,13 @@
 Link {
   color: black;
 }
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:focus {
+  text-decoration: none;
+  color: orange;
+}

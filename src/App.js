@@ -2,8 +2,8 @@ import "./App.css";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { ReactDOM } from "react";
 import Home from "./components/Home/Home";
-import Recipes from "./routes/Recipes";
 import Addrecipes from "./routes/Addrecipes";
+import Recipes from "./routes/Recipes";
 
 function App() {
   return (
