@@ -12,7 +12,7 @@ const RecipeCard = ({ name, desc, img, data, country }) => {
       <img src={country.flag} alt={country.name} />
       <div>
         <Link to={name} state={{ data: data, country: country }}>
-          See more now!
+          See more!
         </Link>
       </div>
     </div>
