@@ -9,7 +9,7 @@ const RecipeList = () => {
 
   // Here is an example of how we can do Promise.all with Axios. First, we define separated axios.get methods and then we use these in useEffect and connect those in Promise.all method.
 
-  const getRecipes = () => axios.get("http://localhost:3001/recipies");
+  const getRecipes = () => axios.get("http://localhost:3001/recipes");
   const getCountries = () => axios.get("https://restcountries.com/v2/all");
 
   useEffect(() => {
